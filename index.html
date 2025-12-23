@@ -1,16 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div {background-color: brown;
-        width: 100px;
-    height: 500px;}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange Studio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f97316',
+            dark: '#0f172a'
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <div>BOOTCAMP INFORMATIKA</div>
+
+<body class="font-sans text-slate-700 scroll-smooth">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed w-full z-50 bg-white/80 backdrop-blur shadow">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="text-2xl font-bold text-primary">OrangeStudio</h1>
+    <nav class="hidden md:flex gap-8 font-medium">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="min-h-screen bg-gradient-to-br from-orange-500 to-orange-700 text-white flex items-center">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-5xl font-extrabold leading-tight mb-6">
+        Build Modern<br>Digital Experience
+      </h2>
+      <p class="text-lg mb-8 opacity-90">
+        Kami membantu bisnis berkembang dengan desain modern & teknologi terbaik.
+      </p>
+      <a href="#contact"
+        class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:scale-105 transition">
+        Start Your Project
+      </a>
+    </div>
+    <img class="rounded-2xl shadow-2xl"
+      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+      alt="Hero">
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-24">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6">About Us</h2>
+    <p class="text-gray-600 max-w-3xl mx-auto text-lg">
+      OrangeStudio adalah digital agency yang berfokus pada desain modern,
+      performa tinggi, dan pengalaman pengguna terbaik.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="bg-slate-50 py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14">Our Services</h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+        <p class="text-gray-600">Desain modern, clean, dan user friendly.</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-xl font-bold mb-3">Web Development</h3>
+        <p class="text-gray-600">Website cepat, aman, dan scalable.</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-xl font-bold mb-3">Branding</h3>
+        <p class="text-gray-600">Bangun identitas brand yang kuat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section id="features" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14">Why Choose Us</h2>
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="p-6">⚡ Fast Performance</div>
+      <div class="p-6">📱 Fully Responsive</div>
+      <div class="p-6">🎨 Modern Design</div>
+      <div class="p-6">🔒 Secure System</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="bg-slate-50 py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14">Latest Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <img class="rounded-2xl shadow" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+      <img class="rounded-2xl shadow" src="https://images.unsplash.com/photo-1506765515384-028b60a970df">
+      <img class="rounded-2xl shadow" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section id="team" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-14">Our Team</h2>
+    <div class="grid md:grid-cols-3 gap-12">
+      <div>
+        <img class="rounded-full mx-auto mb-4 w-32"
+          src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
+        <h4 class="font-bold">Alex</h4>
+        <p class="text-gray-500">Designer</p>
+      </div>
+      <div>
+        <img class="rounded-full mx-auto mb-4 w-32"
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
+        <h4 class="font-bold">Brian</h4>
+        <p class="text-gray-500">Developer</p>
+      </div>
+      <div>
+        <img class="rounded-full mx-auto mb-4 w-32"
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde">
+        <h4 class="font-bold">Clara</h4>
+        <p class="text-gray-500">Marketing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing" class="bg-slate-50 py-24">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-14">Pricing Plan</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white p-8 rounded-2xl shadow">
+        <h3 class="font-bold text-xl">Basic</h3>
+        <p class="text-4xl text-primary my-6">$49</p>
+      </div>
+      <div class="bg-primary text-white p-10 rounded-2xl shadow scale-105">
+        <h3 class="font-bold text-xl">Pro</h3>
+        <p class="text-4xl my-6">$99</p>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow">
+        <h3 class="font-bold text-xl">Enterprise</h3>
+        <p class="text-4xl text-primary my-6">$199</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 bg-gradient-to-br from-orange-600 to-orange-800 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6">Let’s Work Together</h2>
+    <p class="mb-8">Email: hello@orangestudio.com</p>
+    <a href="#" class="bg-white text-primary px-8 py-4 rounded-full font-semibold">
+      Contact Us
+    </a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-gray-400 text-center py-6">
+  © 2025 OrangeStudio. All rights reserved.
+</footer>
+
+<!-- ================= BACK TO TOP ================= -->
+<button id="topBtn"
+  class="hidden fixed bottom-6 right-6 bg-primary text-white px-4 py-3 rounded-full shadow-lg hover:scale-110 transition">
+  ↑
+</button>
+
+<script>
+  const btn = document.getElementById("topBtn");
+  window.addEventListener("scroll", () => {
+    btn.classList.toggle("hidden", window.scrollY < 400);
+  });
+  btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+</script>
+
 </body>
 </html>
